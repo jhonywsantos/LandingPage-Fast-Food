@@ -4,8 +4,6 @@ body {
   font-family: Arial, sans-serif;
 }
 footer {
-  /* REMOVA a cor de fundo e adicione o background com a imagem */
-  background: url('src/images/sunlight.png') no-repeat center bottom/cover;
   color: #fff;
   padding: 40px 0 0 0;
   position: relative;
@@ -13,7 +11,9 @@ footer {
 }
 
 footer img {
-  display: none; /* Isso oculta a imagem do HTML pois agora usamos como background */
+  width: 100%;
+  display: block;
+  margin-bottom: -5px;
 }
 
 #footer-items {
