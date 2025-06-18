@@ -81,9 +81,11 @@
     #home {
         min-height: 100%;
         padding-top: 0px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #banner, #banner img, #home .shape {
+    #banner, #banner img {
         display: none;
     }
 
@@ -91,11 +93,34 @@
         width: 100%;
         text-align: center;
         justify-content: center;
+        padding: 20px;
+        margin-top: 0;
+        position: relative;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #home .shape {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        margin-top: 20px;
+        order: 2; /* Coloca a imagem após o conteúdo */
     }
 }
 
 @media screen and (max-width: 450px) {
     #phone-button button {
         display: none;
+    }
+    
+    #home .shape {
+        height: 200px; /* Altura menor para mobile pequeno */
+    }
+    
+    #cta .title {
+        font-size: 2.5rem; /* Título menor para mobile */
     }
 }
