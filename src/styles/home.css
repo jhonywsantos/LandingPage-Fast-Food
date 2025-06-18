@@ -75,6 +75,7 @@
     top: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden; /* Garante que a imagem respeite as bordas arredondadas */
 }
 
 @media screen and (max-width: 1170px) {
@@ -103,11 +104,12 @@
     #home .shape {
         display: block;
         position: relative;
-        width: 100%;
+        width: 90%; /* Largura reduzida para melhor visualização */
         height: 300px;
-        border-radius: 0;
-        margin-top: 20px;
-        order: 2; /* Coloca a imagem após o conteúdo */
+        border-radius: 20px; /* Bordas arredondadas uniformes para mobile */
+        margin: 20px auto; /* Centraliza o elemento */
+        order: 2;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
     }
 }
 
@@ -117,10 +119,12 @@
     }
     
     #home .shape {
-        height: 200px; /* Altura menor para mobile pequeno */
+        height: 200px;
+        border-radius: 15px; /* Bordas ligeiramente menores para mobile pequeno */
+        width: 85%; /* Largura um pouco menor */
     }
     
     #cta .title {
-        font-size: 2.5rem; /* Título menor para mobile */
+        font-size: 2.5rem;
     }
 }
