@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
 }
 footer {
+  /* REMOVA esta linha: background: #222222; */
   color: #fff;
   padding: 40px 0 0 0;
   position: relative;
