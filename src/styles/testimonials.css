@@ -6,9 +6,11 @@
     gap: 48px;
 }
 
+/* Ajuste principal aqui - reduzi o tamanho da imagem */
 #testimonials-chef {
-    width: 500px;
+    width: 350px; /* Reduzi de 500px para 350px */
     height: auto;
+    max-width: 100%; /* Garante responsividade */
 }
 
 #testimonials .section-subtitle {
@@ -54,20 +56,46 @@
 }
 
 @media screen and (max-width: 1170px) {
+    #testimonials {
+        gap: 30px; /* Reduzi o gap para telas menores */
+    }
+    
     #testimonials .section-subtitle {
         text-align: center;
         font-size: 2.5rem;
     }
 
-    #testimonial-chef {
-        display: none;
+    #testimonials-chef {
+        width: 300px; /* Tamanho menor para tablets */
     }
 
     #testimonials-content {
-        width: 70%;
+        width: 60%; /* Ajuste proporcional */
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #testimonials-chef {
+        width: 250px; /* Tamanho ainda menor para telas estreitas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #testimonials {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    
+    #testimonials-chef {
+        width: 200px; /* Tamanho mobile */
+        margin-bottom: 30px;
+    }
+
+    #testimonials-content {
+        width: 100%;
     }
 }
 
@@ -75,11 +103,12 @@
     #testimonials .section-subtitle {
         font-size: 2rem;
     }
-
-    #testimonials-content {
-    width: 100%;
-    }
+    
     .feedback {
         flex-direction: column;
+    }
+    
+    #testimonials-chef {
+        width: 180px; /* Tamanho final para mobile pequeno */
     }
 }
