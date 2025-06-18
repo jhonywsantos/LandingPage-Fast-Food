@@ -6,9 +6,9 @@
     gap: 48px;
 }
 
-/* Ajuste principal aqui - reduzi o tamanho da imagem */
+/* Ajuste principal - reduz o tamanho da imagem */
 #testimonials-chef {
-    width: 350px; /* Reduzi de 500px para 350px */
+    width: 200px; /* Reduzi de 500px para 350px */
     height: auto;
     max-width: 100%; /* Garante responsividade */
 }
@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 1170px) {
     #testimonials {
-        gap: 30px; /* Reduzi o gap para telas menores */
+        gap: 30px; /* Reduz o gap para telas menores */
     }
     
     #testimonials .section-subtitle {
