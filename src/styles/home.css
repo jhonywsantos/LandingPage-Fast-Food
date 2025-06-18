@@ -64,7 +64,10 @@
 }
 
 .shape {
-    background-color: #fd2702;
+    background-image: url('https://raw.githubusercontent.com/jhonywsantos/LandingPage-Fast-Food/main/src/images/poster-burguer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 50%;
     height: 100%;
     position: absolute;
