@@ -4,16 +4,21 @@ body {
   font-family: Arial, sans-serif;
 }
 footer {
-  color: #fff;
+  color: #161616;
   padding: 40px 0 0 0;
   position: relative;
   width: 100%;
+  overflow: hidden; /* Adicionado para conter a imagem */
 }
 
 footer img {
   width: 100%;
+  height: auto;
   display: block;
-  margin-bottom: -5px;
+  position: absolute; /* Alterado para absolute */
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Garante que fique atrás do conteúdo */
 }
 
 #footer-items {
@@ -22,6 +27,9 @@ footer img {
   align-items: center;
   padding: 24px 10vw;
   flex-wrap: wrap;
+  position: relative; /* Adicionado */
+  z-index: 2; /* Garante que o conteúdo fique acima da imagem */
+  background-color: transparent; /* Mantém transparente */
 }
 
 #copyright {
